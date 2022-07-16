@@ -10,12 +10,13 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <title>Tech Shop</title>
 
 </head>
  <body>
-    <div class="topBand">
+    <div class="header">
     <!-- search bar -->
     <div class="search"> 
         <form>
@@ -31,15 +32,18 @@
     </div>
     </div>
     <!-- menu bar  -->
-    <div class="menuBar">
+     <div class="menuBar">
         <div class="logo">
         <img src="images/logo.png">
-        </div>
-        <div class="menu">
-            <a active href="index.php">Home</a>
-            <a href="shop.php">Shop</a>
-            <a href="articles.php">Articles</a>
-        </div>
+     </div>
+     <div class="menu">
+        <label for="hamburger" onClick="showMenu()" class="icon">&#9776;</label>  
+        <ul>
+            <li><a href="index.php" class="active">Home</a></li>
+            <li><a href="shop1.php">Shop</a></li>
+            <li><a href="articles1.php">Articles</a></li>
+        </ul>
+    </div>
     </div>
     <!-- intro products carousel -->
     <section class="introSection">
@@ -52,28 +56,43 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images/smartphone.png"   alt="smartphone">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-md-block" >
                 <h5>Smartphone </h5>
                 <h6>Ksh 13, 999</h6>
                 <h6>Available in stores countrywide today!</h6>
+            </div>
+            <div id="caption">
+                <h5>Smartphone </h5
+                <h6>Ksh 13, 999</h6
+                <button class="btn"><a href="shop1.php">Shop now</a></button>
             </div>
         </div>
     <div class="carousel-item">
         <img src="images/tablet.png"  alt="tablet">
         <br>
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-none d-md-block" id="caption">
             <h5>Tablet</h5>
             <h6>Ksh 19, 999</h6>
             <h6>Available in stores countrywide today!</h6>
       </div>
+       <div id="caption">
+                <h5>Tablet</h5>
+                <h6>Ksh 19, 999</h6>
+                <button class="btn"><a href="shop1.php">Shop now</a></button>
+       </div>
     </div>
     <div class="carousel-item">
       <img src="images/earphones.png"  alt="...">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-none d-md-block"  id="caption">
             <h5>Earphones</h5>
-            <h6>Ksh 9, 999</h6>
+            <h6>Ksh 1,999</h6>
             <h6>Available in stores countrywide today!</h6>
       </div>
+      <div id="caption">
+            <h5>Earphones</h5>
+            <h6>Ksh 1,999</h6>
+            <button class="btn"><a href="shop1.php">Shop now</a></button>
+       </div>
     </div>
   </div>
     </div>
